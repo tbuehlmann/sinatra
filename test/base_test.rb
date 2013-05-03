@@ -156,7 +156,7 @@ class BaseTest < Test::Unit::TestCase
 
     class TestMiddlewareContentLength < Sinatra::Base
       get '/forward' do
-        res = forward
+        forward
         'From after explicit forward!'
       end
     end
